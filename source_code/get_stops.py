@@ -23,7 +23,18 @@ class Stop:
         
     def GetAttribute(self,attribute):
         return getattr(self, attribute)
-   
+    
+    def GetRoute(self):
+        list_Route=[]
+        Cur=''
+        for character in self.Routes:
+            if character ==' ' or character == ',':
+                if Cur!='': list_Route.append(Cur)
+                Cur=''
+            else: Cur = Cur + character
+        
+        return list_Route
+        
 class StopQuery:
     def __init__(self, file_path):
         self.stops = []
@@ -67,7 +78,7 @@ class StopQuery:
 
 def main():  
     query=StopQuery('D:/study/term_2/CS162/Lab/repository/PROJECT_CS162/source_code/stops.json')
-    query.outputAsCSV(query.searchByAttributes(StopId=3),'stop_CSV_file')
-    query.outputAsJSON(query.searchByAttributes(StopId=3),'stop_JSON_file')
+    query.outputAsCSV(query.searchByAttributes(Routes='61-3'),'stop_CSV_file')
+    query.outputAsJSON(query.searchByAttributes(Name="Bến xe Củ Chi"),'stop_JSON_file')
 if __name__=="__main__": 
     main() 

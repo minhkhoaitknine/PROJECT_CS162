@@ -24,7 +24,7 @@ class PathQuery:
     def __init__(self, file_path):
         self.paths = []
         with open(file_path, 'r',encoding='utf-8') as file:
-            for line in file:   
+            for line in file:
                 data = json.loads(line)
                 Path(data)
                 self.paths.append(Path(data))
@@ -61,6 +61,6 @@ class PathQuery:
 def main():
     query=PathQuery('D:/study/term_2/CS162/Lab/repository/PROJECT_CS162/source_code/paths.json')
     query.outputAsCSV(query.searchByAttributes(RouteId=303),'paths_CSV_file')
-    query.outputAsJSON(query.searchByAttributes(RouteId=303),'paths_JSON_file')
+    query.outputAsJSON(query.searchByAttributes(RouteId=23, RouteVarId=45),'paths_JSON_file')
 if __name__=="__main__": 
     main() 

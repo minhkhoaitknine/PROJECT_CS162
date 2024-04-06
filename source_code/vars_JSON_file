@@ -1,2 +1,1 @@
-{"RouteId": 3, "RouteVarId": 5, "RouteVarName": "Lượt đi: Bến Thành - Thạnh Lộc", "RouteVarShortName": "Thạnh Lộc", "RouteNo": "03", "StartStop": "Bến xe buýt Sài Gòn", "EndStop": "THẠNH LỘC", "Distance": 21456.000000000007, "Outbound": true, "RunningTime": 70}
-{"RouteId": 3, "RouteVarId": 6, "RouteVarName": "Lượt về: Thạnh Lộc - Bến Thành", "RouteVarShortName": "Bến Thành", "RouteNo": "03", "StartStop": "THẠNH LỘC", "EndStop": "Bến xe buýt Sài Gòn", "Distance": 21704.0, "Outbound": false, "RunningTime": 70}
+{"RouteId": 23, "RouteVarId": 45, "RouteVarName": "Lượt đi: Bến xe Củ Chi - Bình Mỹ", "RouteVarShortName": "Bình Mỹ", "RouteNo": "126", "StartStop": "Bến xe Củ Chi", "EndStop": "Bến xe Bình Mỹ", "Distance": 20311.999999999996, "Outbound": true, "RunningTime": 40}

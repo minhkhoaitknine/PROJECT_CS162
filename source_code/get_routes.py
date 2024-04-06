@@ -62,7 +62,8 @@ class RouteVarQuery:
 
 def main():     
     query=RouteVarQuery('D:/study/term_2/CS162/Lab/repository/PROJECT_CS162/source_code/vars.json')
-    query.outputAsCSV(query.searchByAttributes(RouteId=3),'vars_CSV_file')
-    query.outputAsJSON(query.searchByAttributes(RouteId=3),'vars_JSON_file')
+    query.outputAsCSV(query.searchByAttributes(RouteNo='61-3'),'vars_CSV_file')
+    query.outputAsJSON(query.searchByAttributes(RouteId=23, RouteVarId=45),'vars_JSON_file')
+
 if __name__=="__main__": 
     main() 
